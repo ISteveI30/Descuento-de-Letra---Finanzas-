@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap");
+/*setting general attributes*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/*** setting variables ****/
+:root {
+  --color1: #1d8348;
+  --color2: #28b463;
+  --color3: #58d68d;
+  --color4: #17202a;
+  --color5: #212f3d;
+  --color6: #ecf0f1;
+  --color7: #abebc6;
+  --boder: 1px solid black;
+  --shadow: 0 0 2px 0 black;
+  --shadow-i: inset 0 0 2px 0 black;
+}
+/**** content general ***/
+.container {
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.tittle {
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: var(--color3);
+  -webkit-text-stroke: 0.5px var(--color3);
+}
+
+/**** first part - data ****/
+
+.data-container,
+.data-container-2 {
+  display: flex;
+}
+.data {
+  width: 45%;
+  margin: auto;
+  padding: 10px;
+}
+.group-data {
+  padding: 10px;
+}
+.data-box,
+#deadline {
+  float: right;
+  width: 48%;
+}
+.select-box,
+#deadline {
+  width: 51%;
+}
+.data-box,
+.select-box {
+  padding: 5px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--color6);
+  box-shadow: var(--shadow-i);
+}
+/**** second part - data ****/
+.data-box-2 {
+  padding: 5px;
+  border-radius: 8px;
+  margin-left: 10px;
+  width: 48%;
+  border: none;
+  background-color: var(--color6);
+  box-shadow: var(--shadow-i);
+}
+
+h4 {
+  color: var(--color3);
+  -webkit-text-stroke: 0.5px var(--color3);
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 19px;
+  text-align: center;
+}
+/*** buttons properties ***/
+.btn-container {
+  height: 60px;
+}
+.btn {
+  box-sizing: content-box;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 7px;
+  margin: 3% 4%;
+  width: 30%;
+  height: 35%;
+  background-color: var(--color3);
+  color: var(--color4);
+  border: none;
+  border-radius: 8px;
+}
+.btn:hover {
+  background-color: var(--color2);
+  color: white;
+}
+/**** div - new-data  ****/
+
+.new-data {
+  height: 100px;
+  margin-top: 10px;
+  
+}
+.add-data {
+  width: 90%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  overflow-y: auto;
+  background-color: var(--color6);
+  box-shadow: var(--shadow);
+  font-size: 17px;
+}
+.new-option {
+  display: block;
+}
+/***** btn-final ****/
+.content-final {
+  width: 20%;
+  height: 40px;
+  margin: 10px auto 0;
+  padding: 2px;
+}
+.btn-final {
+  border: none;
+  display: block;
+  padding: 6px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--color4);
+  color: #fff;
+  border-radius: 5px;
+}
+.btn-final:hover {
+  background-color: var(--color5);
+}
+/****** answers **/
+#container-2 {
+  width: 100%;
+  overflow-y: hidden;
+  margin-bottom: 10px;
+}
+.group-data-2 {
+  border: 1px solid #fff;
+  padding: 10px;
+  background-color: var(--color7);
+  border-radius: 5px;
+}
+p {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 10px;
+}
+/***** btn-final ****/
+.content-final-2 {
+  width: 30%;
+  height: 40px;
+  margin: 10px auto 0;
+  padding: 2px;
+}
+.btn-final-2 {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  margin: 7px auto 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: var(--color4);
+  color: #fff;
+  border-radius: 5px;
+}
+.btn-final-2:hover {
+  background-color: var(--color5);
+}

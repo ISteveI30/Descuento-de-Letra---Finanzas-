@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+/*setting general attributes*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+:root {
+    --boder: 1px solid black;
+}
+.container {
+  
+    width: 100%;
+    overflow-x: hidden;
+}
+.container-img {
+    width: 80%;
+}
+img {
+    width: 80%;
+    height: 500px;
+}

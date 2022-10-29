@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style-descuento.css" />
+    <title>Descuento</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tittle">
+        <h3 id="titulo-inicio">Descuento de Letra de Cambio</h3>
+      </div>
+      <form id="form-data" action="">
+        <div class="data-container">
+          <div class="data">
+            <div class="group-data">
+              <label for="inicial">Valor Nominal:</label>
+              <input class="data-box" type="text" id="inicial" />
+            </div>
+            <div class="group-data">
+              <label for="date-start">Fecha de giro:</label>
+              <input class="data-box" type="date" id="date-start" />
+            </div>
+            <div class="group-data">
+              <label for="date-discount">Fecha de Descuento:</label>
+              <input class="data-box" type="date" id="date-discount" />
+            </div>
+            <div class="group-data">
+              <label for="date-end">Fecha de Vencimiento:</label>
+              <input class="data-box" type="date" id="date-end" />
+            </div>
+          </div>
+          <div class="data">
+            <div class="group-data">
+              <label for="tasa">Tasa (%):</label>
+              <input class="data-box" type="text" id="tasa" />
+            </div>
+            <div class="group-data">
+              <label for="deadline">Plazo tasa:</label>
+              <select class="select-box" id="deadline">
+                <option value="1">Diario</option>
+                <option value="15">Quincenal</option>
+                <option value="30">Mensual</option>
+                <option value="60">Bimestral</option>
+                <option value="90">Trimestral</option>
+                <option value="120">Cuatrimestal</option>
+                <option value="180">Semestral</option>
+                <option value="360">Anual</option>
+              </select>
+            </div>
+            <div class="group-data">
+              <label for="cost">Retenciones:</label>
+              <input class="data-box" type="text" id="cost" />
+            </div>
+          </div>
+        </div>
+        <div class="data-container-2">
+          <div class="data">
+            <h4 for="">Costes Iniciales</h4>
+            <div class="group-data">
+              <select class="select-box" id="select-initial">
+                <option value="0">Portes</option>
+                <option value="1">Fotocopias</option>
+                <option value="2">Comisión de desembolsos</option>
+                <option value="3">Gastos de administración</option>
+                <option value="4">Gastros notariales</option>
+                <option value="5">Otros gastos</option>
+              </select>
+            </div>
+            <div class="group-data">
+              <label for="monto-inicial">Monto:</label>
+              <input class="data-box-2" id="monto-inicial" type="text" />
+            </div>
+            <div class="btn-container">
+              <input type='button' class="btn" onclick="addString()" value="Agregar"/>
+              <input type='button' class="btn" onclick="eliminarOpcion()" value="Eliminar"/>
+            </div>
+            <div class="new-data">
+              <select class="add-data" id="add-data" multiple="multiple"></select>
+            </div>
+          </div>
+          <div class="data">
+            <h4 for="">Costes finales</h4>
+            <div class="group-data">
+              <select class="select-box" id="select-final">
+                <option value="0">Portes</option>
+                <option value="1">Gastos de administración</option>
+                <option value="2">Otros gastos</option>
+              </select>
+            </div>
+            <div class="group-data">
+              <label for="monto-final">Monto:</label>
+              <input class="data-box-2" id="monto-final" type="text" />
+            </div>
+            <div class="btn-container">
+              <input type='button' class="btn" onclick="addString2()" value="Agregar"/>
+              <input type='button' class="btn" onclick="eliminarOpcion2()" value="Eliminar"/>
+            </div>
+            <div class="new-data">
+              <select class="add-data" id="add-data-2" multiple="multiple"></select>
+            </div>
+          </div>
+        </div>
+        <div class="content-final">
+          <a
+            type="button"
+            onclick="calculate()"
+            class="btn-final"
+            href="#container-2"
+            >Calcular</a
+          >
+        </div>
+      </form>
+    </div>
+    <div id="container-2"></div>
+    <script src="/js/letra.js"></script>
+    <script src="/js/etiquetas.js"></script>
+    <script src="/js/datos.js"></script>
+    <script src="/js/arreglos.js"></script>
+    <script src="/js/formulas.js"></script>
+    <script src="/js/operaciones.js"></script>
+  </body>
+</html>

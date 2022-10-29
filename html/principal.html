@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style-principal.css" />
+    <title>Aplicación de descuento</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="perfil">
+        <img class="img-user" src="/img/usuario.png" alt="" />
+        <p class="ussername">USER</p>
+      </div>
+      <ul class="options">
+        <li class="item">
+          <a href="/html/inicio.html" target="iframe-content"
+            ><span class="material-icons">home</span>INICIO</a
+          >
+        </li>
+        <li class="item">
+          <a href="/html/descuento.html" target="iframe-content"
+            ><span class="material-icons">account_balance_wallet </span
+            >DESCUENTO</a
+          >
+        </li>
+        <li class="item">
+          <a href="/html/historial.html" target="iframe-content"
+            ><span class="material-icons">view_list</span>HISTORIAL</a
+          >
+        </li>
+        <li class="item">
+          <a class="link-option" href="/index.html"
+            ><span class="material-icons">logout</span> CERRAR SESIÓN</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="replace">
+        <iframe
+          title="marco"
+          src="/html/inicio.html"
+          name="iframe-content"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
